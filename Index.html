@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <!--/* CSS HEX */
+--pomp-and-power: #996F9Aff;
+--chinese-violet: #7A5573ff;
+--raisin-black: #2F232Cff;
+--pomp-and-power-2: #77588Cff;
+--rose-quartz: #AE8DA9ff;-->
+  <body class="bg-gradient-to-tr from-[#7A5573ff] to-[#AE8DA9ff] opacity-88 text-[#EED4E6ff] " style = "font-family: 'Lato', sans-serif;">
+    <!-- Header -->
+    <header class="bg-[#2F232Cff] text-white absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center text-xl p-6 lg:px-8"
+        aria-label="Global">
+        <div class="flex ">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Serial Experiments Lain</span>
+            <img class="h-8 "
+              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+              alt>
+          </a>
+        </div>
+        <div class="flex lg:hidden mx-auto">
+          <button type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center justify-between mx-auto hidden lg:flex lg:gap-x-12 font-semibold leading-6 text-[#EED4E6ff]">
+          <a href="#" >Sinopsis</a>
+          <a href="#" >Personajes</a>
+          <a href="#" >Episodios</a>
+          <a href="#" >Galeria</a>
+          <a href="#" >Contacto</a>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                alt>
+            </a>
+            <button type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+              </div>
+              <div class="py-6">
+                <a href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
+                  in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Parrafo e Imagen -->
+    <div class="pt-24 sm:pt-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div class="lg:pr-4 h-screen">
+            <div
+              class="relative overflow-hidden rounded-3xl bg-gray-900  shadow-2xl h-full lg:max-w-lg flex ">
+              <img
+                class="absolute inset-0 h-full w-full object-cover brightness-125 "
+                src="/Imagenes/Serial-7resize.jpg"
+                alt>
+              <div class="absolute inset-0 bg-gray-400 mix-blend-multiply"></div>
+              <div
+                class="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
+                aria-hidden="true">
+                <div
+                  class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#7A5573ff] to-[#AE8DA9ff] opacity-20"
+                  style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+              </div>
+              <figure class="relative isolate flex items-end pb-12 px-6 text-center">
+                <blockquote
+                  class="mt-6 text-xl font-semibold leading-8 pb-12">
+                  <p>“No existe un lugar para esconderte. Donde vayas todos están conectados.”</p>
+                </blockquote>
+              </figure>
+            </div>
+          </div>
+          <div>
+            <div class="text-base leading-7 lg:max-w-lg">
+              <p class="font-semibold leading-7 text-[#2F232Cff]">Serial Experiments Lain
+                </p>
+              <h1
+                class="mt-2 text-4xl font-bold tracking-tight text-[#110E0Eff] "> Present Day, Present time
+                </h1>
+              <div class="max-w-xl">
+                <p class="mt-6">El primer estremecimiento en la solitaria vida 
+                  de Lain Iwakura ocurre cuando se entera que estudiantes de su escuela 
+                  han recibido extraños correos electrónicos póstumos de Chisa Yomoda, 
+                  una compañera de clase que se suicidó. Lain recibe un mensaje a su navegador 
+                  donde la estudiante le dice que no se trata de una broma y que se encuentra con Dios. 
+                  A partir de entonces, Lain inicia un camino que la llevará a adentrarse cada vez más en la red o Wired (similar al internet actual), 
+                  y en sus propios pensamientos. Después de ello, trata de descubrir más acerca del tema, pidiéndole a su padre un nuevo Navi (ordenador) 
+                  y así intentara comunicarse nuevamente con Chisa.</p>
+                <p class="mt-8">Poco a poco, la vida de Lain comienza a desarrollarse solo a través del Wired por lo que su única amiga Alice comienza a preocuparse, 
+                  incitándola a salir con ella y sus amigas. Así, conoce la existencia de un misterioso Psycho chip que tiempo después le permite entrar al Wired de forma libre, 
+                  y que gradualmente la convierte en un ser omnipotente dentro de la red, como una especie de dios. Conforme Lain va descubriendo más al respecto, 
+                  nota que unos extraños hombres de negro comienzan a vigilar su casa, al igual que los Knights/Caballeros (una especie de hackers dentro del Wired).</p>
+                <p class="mt-8">Gradualmente, Lain se hace famosa dentro de la Red, ganando un gran prestigio con lo que también incrementa su poder y en consecuencia, 
+                  pierde el interés por vivir en el mundo real. A medida que descubre nuevas cosas, 
+                  sus amigas comienzan a recibir rumores acerca de su otra personalidad (su otro yo del Internet que es completamente distinto), 
+                  creándose confusión. Finalmente, descubre que ha dejado de reconocer a su verdadera personalidad y comienza a preguntarse "¿quién es Lain?"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="mt-32 bg-[#2F232Cff] sm:mt-56 flex  "
+      aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="mx-auto max-w-7xl py-10">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <img class="h-7"
+            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+            alt="Company name">
+          <div
+            class="mt-16 grid grid-cols-4 gap-12 xl:col-span-2 xl:mt-0">
+              <div>
+                <h3
+                  class="text-sm font-semibold leading-6 ">Solutions</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Marketing</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Analytics</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Commerce</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Insights</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-10 md:mt-0">
+                <h3
+                  class="text-sm font-semibold leading-6 ">Support</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Documentation</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Guides</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300">API
+                      Status</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3
+                  class="text-sm font-semibold leading-6 e">Company</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">About</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Jobs</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Press</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Partners</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-10 md:mt-0">
+                <h3
+                  class="text-sm font-semibold leading-6 ">Legal</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Claim</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Privacy</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="text-sm leading-6 text-gray-300 ">Terms</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
