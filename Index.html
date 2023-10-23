@@ -36,7 +36,26 @@
         </div>
         <div
           class="flex items-center justify-between mx-auto text-sm lg:text-lg gap-x-6 font-semibold leading-6 text-[#EED4E6ff]">
-          <a href="#">Personajes</a>
+          <a href="#">
+            <div>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="hover:bg-[#2F232Cff] border-b border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center justify-between w-full w-auto">Personajes 
+                  <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar" class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                    <li>
+                        <a href="#" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Familia Iwakura</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Personajes secundarios</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+          </a>
           <a href="#">Episodios</a>
           <a href="Galeria.html">Galeria</a>
           <a href="#">Contacto</a>
@@ -48,7 +67,7 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div class="lg:pr-4 h-screen">
+          <div class="lg:pr-4 h-[50vh] lg:h-2/3">
             <div
               class="relative overflow-hidden rounded-3xl bg-gray-900  shadow-2xl h-full lg:max-w-lg flex ">
               <img
@@ -176,7 +195,7 @@
         </div>
         <div class="flex">
           <div
-            class="mt-16 grid grid-cols-4 gap-12 xl:col-span-2 xl:mt-0">
+            class="lg:mt-16 grid grid-cols-4 gap-12 col-span-2 mt-0">
             <div>
               <h3
                 class="text-sm font-semibold leading-6 ">Personajes</h3>
@@ -192,7 +211,7 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-10 md:mt-0">
+            <div >
               <h3
                 class="text-sm font-semibold leading-6 ">Episodios</h3>
               <ul role="list" class="mt-6 space-y-4">
@@ -220,7 +239,7 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-10 md:mt-0">
+            <div>
               <h3
                 class="text-sm font-semibold leading-6 ">Contacto</h3>
               <ul role="list" class="mt-6 space-y-4">
@@ -238,5 +257,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
   </body>
 </html>
