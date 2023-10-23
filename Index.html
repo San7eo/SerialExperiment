@@ -9,6 +9,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Serial Experiments Lain</title>
   </head>
   <!--/* CSS HEX */
 --pomp-and-power: #996F9Aff;
@@ -17,82 +19,29 @@
 --pomp-and-power-2: #77588Cff;
 --rose-quartz: #AE8DA9ff;-->
   <body
-    class="bg-gradient-to-tr from-[#AE8DA9ff] to-[#7A5573ff] opacity-88 text-[#EED4E6ff] "
+    class="bg-gradient-to-tr from-[#AE8DA9ff] to-[#7A5573ff] opacity-88 text-[#EED4E6ff]"
     style="font-family: 'Lato', sans-serif;">
     <!-- Header -->
-    <header class="bg-[#2F232Cff] text-white absolute inset-x-0 top-0 z-50">
+    <header class="bg-[#2F232Cff] absolute inset-x-0 top-0 z-50 ">
       <nav class="flex items-center text-xl p-6 lg:px-8"
         aria-label="Global">
         <div class="flex ">
           <!--queda por sacarle los bordes a la imagen del logo-->
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="Index.html" class="-m-1.5 p-1.5">
             <span class="sr-only">Serial Experiments Lain</span>
-            <img class="h-8 "
-              src="Imagenes/LogoNaviResizeRecolor2.jpg"
+            <img class="h-8  "
+              src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
               alt>
           </a>
         </div>
-        <div class="flex lg:hidden mx-auto">
-          <button type="button"
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
-        </div>
         <div
-          class="flex items-center justify-between mx-auto hidden lg:flex lg:gap-x-12 font-semibold leading-6 text-[#EED4E6ff]">
+          class="flex items-center justify-between mx-auto text-sm lg:text-lg gap-x-6 font-semibold leading-6 text-[#EED4E6ff]">
           <a href="#">Personajes</a>
           <a href="#">Episodios</a>
-          <a href="#">Galeria</a>
+          <a href="Galeria.html">Galeria</a>
           <a href="#">Contacto</a>
         </div>
       </nav>
-      <!-- Mobile menu, show/hide based on menu open state. -->
-      <div class="lg:hidden" role="dialog" aria-modal="true">
-        <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="fixed inset-0 z-50"></div>
-        <div
-          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div class="flex items-center justify-between">
-            <a href="#" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt>
-            </a>
-            <button type="button"
-              class="-m-2.5 rounded-md p-2.5 text-gray-700">
-              <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor"
-                aria-hidden="true">
-                <path stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <div class="mt-6 flow-root">
-            <div class="-my-6 divide-y divide-gray-500/10">
-              <div class="space-y-2 py-6">
-                <a href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50">Personajes</a>
-                <a href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50">Episodios</a>
-                <a href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50">Galeria</a>
-                <a href="#"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50">Contacto</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     <!-- Parrafo e Imagen -->
     <div class="pt-24 sm:pt-32">
@@ -181,42 +130,45 @@
     </div>
     <!-- Footer -->
     <!--queda por acomodar la imagen del logo-->
-    <footer class="mt-32 bg-[#2F232Cff] sm:mt-56 flex p-6 "
+    <footer class="mt-32 bg-[#2F232Cff]  flex p-6 "
       aria-labelledby="footer-heading">
       <h2 id="footer-heading" class="sr-only">Footer</h2>
-      <div> <img class="h-7"
-          src="Imagenes/LogoNaviResizeRecolor2.jpg"
+      <div class="flex ">
+        <a href="Index.html" class="-m-1.5 p-1.5">
+          <img class="min-h-8 lg:h-8"
+          src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
           alt="Navi">
+        </a>
       </div>
       <div class="mx-auto max-w-7xl py-10">
         <div class="flex justify-center ">
           <!--queda por sacarle los bordes a la imagen del logo-->
-          <ul role="list" class="flex mt-6 space-x-4 justify-items-between">
+          <ul role="list" class="flex mt-6 space-x-4 justify-items-between mb-6">
             <li>
               <a>
                 <img class="h-8 "
-                  src="Imagenes/redes/facebook.png"
+                  src="Imagenes/redes/icons8-facebook-rodeado-de-círculo-128.png"
                   alt>
               </a>
             </li>
             <li>
               <a>
                 <img class="h-8 "
-                  src="Imagenes/redes/instagram.png"
+                  src="Imagenes/redes/icons8-instagram-128.png"
                   alt>
               </a>
             </li>
             <li>
               <a>
                 <img class="h-8 "
-                  src="Imagenes/redes/twitter.png"
+                  src="Imagenes/redes/icons8-stockx-128.png"
                   alt>
               </a>
             </li>
             <li>
               <a>
-                <img class="h-8 "
-                  src="Imagenes/redes/youtube.png"
+                <img class="h-8"
+                  src="Imagenes/redes/icons8-youtube-play-128.png"
                   alt>
               </a>
             </li>
