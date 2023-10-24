@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
     <title>Serial Experiments Lain</title>
   </head>
   <!--/* CSS HEX */
@@ -27,36 +28,51 @@
         aria-label="Global">
         <div class="flex ">
           <!--queda por sacarle los bordes a la imagen del logo-->
-          <a href="index.html" class="-m-1.5 p-1.5">
+          <a href="index.html" class="-m-1.5">
             <span class="sr-only">Serial Experiments Lain</span>
-            <img class="h-8  "
+            <img class="h-8 min-h-[2rem] "
               src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
               alt>
           </a>
         </div>
         <div
-          class="flex items-center justify-between mx-auto text-sm lg:text-lg gap-x-6 font-semibold leading-6 text-[#EED4E6ff]">
-          <a href="#">
+          class="flex items-center mx-auto text-sm lg:text-lg leading-6 text-[#EED4E6ff] space-x-4">
             <div>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="hover:bg-[#2F232Cff] border-b border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center justify-between w-full w-auto">Personajes 
-                  <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                  </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
-                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                    <li>
-                        <a href="#" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Familia Iwakura</a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Personajes secundarios</a>
-                    </li>
-                    </ul>
-                </div>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarPER" class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Personajes 
+                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbarPER" class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+                  <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                  <li>
+                      <a href="familiaIwakura.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Familia Iwakura</a>
+                  </li>
+                  <li>
+                      <a href="personajeSecundario.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Personajes secundarios</a>
+                  </li>
+                  </ul>
+              </div>
             </div>
-          </a>
-          <a href="#">Episodios</a>
+            <div>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarEPI" class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Episodios 
+                <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbarEPI" class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+                  <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                  <li>
+                      <a href="episodio1-6.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios 1-6</a>
+                  </li>
+                  <li>
+                      <a href="episodio7-13.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios 7-13</a>
+                  </li>
+                  </ul>
+              </div>
+            </div>
           <a href="Galeria.html">Galeria</a>
           <a href="#">Contacto</a>
         </div>
@@ -94,14 +110,14 @@
           </div>
           <div>
             <div class="text-base leading-7 lg:max-w-lg">
-              <p class="font-semibold leading-7 text-[#2F232Cff]">Serial
+              <p class="font-semibold leading-7 text-[#2F232Cff] lg:text-lg">Serial
                 Experiments Lain
               </p>
               <h1
                 class="mt-2 text-4xl font-bold tracking-tight text-[#110E0Eff] ">
                 Present Day, Present time
               </h1>
-              <div class="max-w-xl">
+              <div class="max-w-xl text-[#161213ff] lg:text-lg">
                 <p class="mt-6">El primer estremecimiento en la solitaria vida
                   de Lain Iwakura ocurre cuando se entera que estudiantes de su
                   escuela
@@ -149,18 +165,16 @@
     </div>
     <!-- Footer -->
     <!--queda por acomodar la imagen del logo-->
-    <footer class="mt-32 bg-[#2F232Cff]  flex p-6 "
+    <footer class="mt-32 bg-[#2F232Cff] flex flex-col p-6 "
       aria-labelledby="footer-heading">
       <h2 id="footer-heading" class="sr-only">Footer</h2>
-      <div class="flex ">
-        <a href="index.html" class="-m-1.5 p-1.5">
-          <img class="min-h-8 lg:h-8"
+      <div class="grid grid-cols-8 w-full items-center justify-items-center">
+        <a href="index.html" class="-m-1.5 p-1.5 col-span-2 justify-self-start">
+          <img class="h-8 min-h-[2rem]"
           src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
           alt="Navi">
         </a>
-      </div>
-      <div class="mx-auto max-w-7xl py-10">
-        <div class="flex justify-center ">
+        <div class="flex justify-center col-span-4 ">
           <!--queda por sacarle los bordes a la imagen del logo-->
           <ul role="list" class="flex mt-6 space-x-4 justify-items-between mb-6">
             <li>
@@ -193,19 +207,21 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="mx-auto max-w-7xl lg:py-2">
         <div class="flex">
           <div
-            class="lg:mt-16 grid grid-cols-4 gap-12 col-span-2 mt-0">
+            class="lg:mt-4 grid grid-cols-4 gap-12 col-span-2 mt-0">
             <div>
               <h3
                 class="text-sm font-semibold leading-6 ">Personajes</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#"
+                  <a href="familiaIwakura.html"
                     class="text-sm leading-6 text-gray-300 ">Familia Iwakura</a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="personajeSecundario.html"
                     class="text-sm leading-6 text-gray-300 ">Personajes
                     secundarios</a>
                 </li>
@@ -216,11 +232,11 @@
                 class="text-sm font-semibold leading-6 ">Episodios</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#"
+                  <a href="episodio1-6.html"
                     class="text-sm leading-6 text-gray-300 ">Episodios 1-6</a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="episodio7-13.html"
                     class="text-sm leading-6 text-gray-300 ">Episodios 7-13</a>
                 </li>
               </ul>
@@ -230,12 +246,8 @@
                 class="text-sm font-semibold leading-6 e">Galeria</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#"
-                    class="text-sm leading-6 text-gray-300 ">Lain</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="text-sm leading-6 text-gray-300 ">Entorno</a>
+                  <a href="Galeria.html"
+                    class="text-sm leading-6 text-gray-300 ">Imagenes</a>
                 </li>
               </ul>
             </div>
@@ -244,12 +256,8 @@
                 class="text-sm font-semibold leading-6 ">Contacto</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#"
+                  <a href="emailContacto.html"
                     class="text-sm leading-6 text-gray-300 ">Email</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="text-sm leading-6 text-gray-300 ">Chat Online</a>
                 </li>
               </ul>
             </div>
