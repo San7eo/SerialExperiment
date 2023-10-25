@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <title>Serial Experiments Lain: Episodios 1-6 </title>
+    </head>
+    <!--/* CSS HEX */
+--pomp-and-power: #996F9Aff;
+--chinese-violet: #7A5573ff;
+--raisin-black: #2F232Cff;
+--pomp-and-power-2: #77588Cff;
+--rose-quartz: #AE8DA9ff;-->
+    <body
+        class="bg-gradient-to-tr from-[#00061Fff] to-[#2F232Cff] opacity-88 text-[#EED4E6ff]"
+        style="font-family: 'Lato', sans-serif;">
+        <!-- Header -->
+        <header class="bg-[#2F232Cff] absolute inset-x-0 top-0 z-50 ">
+            <nav class="flex items-center text-xl p-6 lg:px-8"
+                aria-label="Global">
+                <div class="flex ">
+                    <!--queda por sacarle los bordes a la imagen del logo-->
+                    <a href="index.html" class="-m-1.5">
+                        <span class="sr-only">Serial Experiments Lain</span>
+                        <img class="h-8 min-h-[2rem] "
+                            src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
+                            alt>
+                    </a>
+                </div>
+                <div
+                    class="flex items-center mx-auto text-sm lg:text-lg leading-6 text-[#EED4E6ff] space-x-4">
+                    <div>
+                        <button id="dropdownNavbarLink"
+                            data-dropdown-toggle="dropdownNavbarPER"
+                            class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Personajes
+                            <svg class="w-4 h-4 ml-1" fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarPER"
+                            class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+                            <ul class="py-1"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="familiaIwakura.html"
+                                        class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Familia
+                                        Iwakura</a>
+                                </li>
+                                <li>
+                                    <a href="personajeSecundario.html"
+                                        class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Personajes
+                                        secundarios</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="dropdownNavbarLink"
+                            data-dropdown-toggle="dropdownNavbarEPI"
+                            class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Episodios
+                            <svg class="w-4 h-4 ml-1" fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarEPI"
+                            class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+                            <ul class="py-1"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="episodio1-6.html"
+                                        class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios
+                                        1-6</a>
+                                </li>
+                                <li>
+                                    <a href="episodio7-13.html"
+                                        class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios
+                                        7-13</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="Galeria.html">Galeria</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="pt-20 ">
+            <div
+                class="my-2 text-2xl font-bold lg:tracking-tight lg:p-x-6 text-center pb-6">
+                <h1 class="flex justify-center text-[#77588Cf9] ">
+                    Episodios 1 - 6
+                </h1>
+            </div>
+            <div class="flex flex-col mx-auto space-y-2 px-1">
+                <div
+                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+                    <div
+                        class=" flex w-64 h-48 lg:w-fit lg:h-fit items-center pt-14 lg:pt-6 pe-2 lg:pe-0 lg:pt-0">
+                        <div
+                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+                            <img src="Imagenes/layer01resize.jpg"
+                                alt="Layer 01 " class="inset-0 object-cover ">
+                        </div>
+                    </div>
+                    <div>
+                        <h2
+                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+                            <span class="text-[#63538e] lg:place-items-end">Layer01:
+                            </span>
+                            <span
+                                class="text-[#EED4E6ff] text-3xl text-center lg:place-items-end">Weird</span>
+                        </h2>
+                        <p
+                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">A
+                            la gente le estan llegando mensajes por correo
+                            electrónico de una chica que se suicidó la semana
+                            anterior (Chisa Yomoda),
+                            quien proclama que sólo dejó su cuerpo, pero que aún
+                            reside en la Red, y que Dios también está allí.
+                            Después de recibir alguno de esos mensajes,
+                            la introvertida Lain se interesa por los ordenadores
+                            y le pide a su padre uno de mayor potencia.</p>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+                    <div
+                        class=" flex w-64 h-48 lg:w-fit lg:h-fit items-center pt-14 lg:pt-6 pe-2 lg:pe-0 lg:pt-0">
+                        <div
+                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+                            <img src="Imagenes/layer02.jpg" alt="Layer 02 "
+                                class="inset-0 object-cover ">
+                        </div>
+                    </div>
+                    <div>
+                        <h2
+                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+                            <span class="text-[#63538e] lg:place-items-end">Layer02:
+                            </span>
+                            <span
+                                class="text-[#EED4E6ff] text-3xl text-center lg:place-items-end">Girls</span>
+                        </h2>
+                        <p
+                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Arisu,
+                            Juri, y Reika llaman a Lain debido a que vieron a su
+                            "doble",
+                            Lain decide unirse a Arisu y sus amigas quienes irán
+                            de nuevo a Cyberia para asegurarse de que no es la
+                            misma Lain. No obstante,
+                            ella se ve involucrada con un tiroteo en el club
+                            debido a un hombre que estaba bajo la influencia de
+                            una droga-dispositivo de nanotecnológica Accela.
+                            Lain recibe su nuevo ordenador. </p>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+                    <div
+                        class=" flex w-64 h-48 lg:w-fit lg:h-fit items-center pt-14 lg:pt-6 pe-2 lg:pe-0 lg:pt-0">
+                        <div
+                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+                            <img src="Imagenes/layer03.jpg" alt="Layer 03 "
+                                class="inset-0 object-cover ">
+                        </div>
+                    </div>
+                    <div>
+                        <h2
+                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+                            <span class="text-[#63538e] lg:place-items-end">layer03:
+                            </span>
+                            <span
+                                class="text-[#EED4E6ff] text-3xl text-center lg:place-items-end">Psyche</span>
+                        </h2>
+                        <p
+                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Lain
+                            se percata de que está siendo espiada por unos
+                            agentes desde un coche cerca de su casa.
+                            En el colegio, recibe de manera anónima un
+                            misterioso chip psique, acerca del cual pregunta
+                            inicialmente a su padre, y luego a Taro en el club
+                            Cyberia.
+                            Taro luego le dice que la ha visto en la red pero
+                            que su personalidad era completamente opuesta a la
+                            de la realidad.
+                            Finalmente Taro le explica cómo instalar el chip
+                            psique en su ordenador. </p>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+                    <div
+                        class=" flex w-64 h-48 lg:w-fit lg:h-fit items-center pt-14 lg:pt-6 pe-2 lg:pe-0 lg:pt-0">
+                        <div
+                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+                            <img src="Imagenes/layer04resize.jpg"
+                                alt="Layer 04 " class="inset-0 object-cover ">
+                        </div>
+                    </div>
+                    <div>
+                        <h2
+                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+                            <span class="text-[#63538e] lg:place-items-end">layer04:
+                            </span>
+                            <span
+                                class="text-[#EED4E6ff] text-3xl text-center lg:place-items-end">Religion</span>
+                        </h2>
+                        <p
+                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Varios
+                            rumores son difundidos sobre Lain en el colegio
+                            y en la red con relación a los numerosos jóvenes
+                            estudiantes de varios colegios que se han suicidado,
+                            debido a la adicción al juego en línea PHANTOMA.
+                            Lain se dedica a investigar solamente las muertes
+                            causadas por un grupo élite secreto de hackers
+                            conocido como Los Knights. </p>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+                    <div
+                        class=" flex w-64 h-48 lg:w-fit lg:h-fit items-center pt-14 lg:pt-6 pe-2 lg:pe-0 lg:pt-0">
+                        <div
+                            class="overflow-hidden rounded-2xl bg-gray-900 shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+                            <img src="Imagenes/layer05re.jpg" alt="Layer 05 "
+                                class="inset-0 object-cover ">
+                        </div>
+                    </div>
+                    <div>
+                        <h2
+                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+                            <span class="text-[#63538e] lg:place-items-end">layer05:
+                            </span>
+                            <span
+                                class="text-[#EED4E6ff] text-2xl text-center lg:place-items-end">Distortion</span>
+                        </h2>
+                        <p
+                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Entre
+                            los eventos alrededor de Tokio el sistema de
+                            información de tráfico es saboteado a causa de
+                            accidentes deliberados,
+                            Lain experimenta una serie de alucinaciones que le
+                            muestran (por medio de objetos inanimados, y
+                            revelaciones de sus padres) la naturaleza de la Red,
+                            y el supuesto Dios en ella.
+                            Mientras tanto, la hermana de Lain, Mika, es llevada
+                            al punto de la demencia debido a que Los Knights
+                            repetidamente le dan el mensaje de que ella cumplirá
+                            la profecía.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+                    <div
+                        class=" flex w-64 h-48 lg:w-fit lg:h-fit items-center pt-14 lg:pt-6 pe-2 lg:pe-0 lg:pt-0">
+                        <div
+                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+                            <img src="Imagenes/layer06re.jpg" alt="Layer 06 "
+                                class="inset-0 object-cover ">
+                        </div>
+                    </div>
+                    <div>
+                        <h2
+                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
+                            <span class="text-[#63538e] lg:place-items-end">layer06:
+                            </span>
+                            <span
+                                class="text-[#EED4E6ff] text-2xl text-center lg:text-3xl lg:place-items-end">Kids</span>
+                        </h2>
+                        <p
+                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Una
+                            imagen de Lain aparece en el firmamento y los niños
+                            levantan sus manos hacia ella.
+                            Ella busca la razón detrás del extraño suceso y
+                            encuentra al Profesor Hodgeson creador de KIDS. Un
+                            experimento que integró varios niños con poderes Psi
+                            para utilizar su potencial y conocer su origen.
+                            El resultado del proyectó acabó con los niños. Ahora
+                            el ve que Los Knights han retomado la idea del
+                            proyecto. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="my-1 text-2xl font-bold lg:tracking-tight lg:p-x-6 text-end pt-10 ">
+            <a href="episodio7-13.html"
+                class="flex justify-center text-[#77588Cf9] ">Episodio 7-13</a>
+        </div>
+        <!-- Footer -->
+        <!--queda por acomodar la imagen del logo-->
+        <footer class="mt-20 bg-[#2F232Cff] flex flex-col p-6 "
+            aria-labelledby="footer-heading">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div
+                class="grid grid-cols-8 w-full items-center justify-items-center">
+                <a href="index.html"
+                    class="-m-1.5 p-1.5 col-span-2 justify-self-start">
+                    <img class="h-8 min-h-[2rem]"
+                        src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
+                        alt="Navi">
+                </a>
+                <div class="flex justify-center col-span-4 ">
+                    <!--queda por sacarle los bordes a la imagen del logo-->
+                    <ul role="list"
+                        class="flex mt-6 space-x-4 justify-items-between mb-6">
+                        <li>
+                            <a
+                                href="https://es-la.facebook.com/groups/1724040977909569/"
+                                target="_blank">
+                                <img class="h-8 "
+                                    src="Imagenes/redes/icons8-facebook-rodeado-de-círculo-128.png"
+                                    alt>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/p/CtM9UEbPxKW/?img_index=10"
+                                target="_blank">
+                                <img class="h-8 "
+                                    src="Imagenes/redes/icons8-instagram-128.png"
+                                    alt>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/results?search_query=rick+roll+meme"
+                                target="_blank">
+                                <img class="h-8 "
+                                    src="Imagenes/redes/icons8-stockx-128.png"
+                                    alt>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/watch?v=s0NME1GfbIc"
+                                target="_blank">
+                                <img class="h-8"
+                                    src="Imagenes/redes/icons8-youtube-play-128.png"
+                                    alt>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-auto max-w-7xl lg:py-2 text-center">
+                <div class="flex">
+                    <div
+                        class="lg:mt-4 grid grid-cols-4 gap-12 col-span-2 mt-0">
+                        <div>
+                            <h3
+                                class="text-sm font-semibold leading-6 ">Personajes</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="familiaIwakura.html"
+                                        class="text-sm leading-6 text-gray-300 ">Familia
+                                        Iwakura</a>
+                                </li>
+                                <li>
+                                    <a href="personajeSecundario.html"
+                                        class="text-sm leading-6 text-gray-300 ">Personajes
+                                        secundarios</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-sm font-semibold leading-6 ">Episodios</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="episodio1-6.html"
+                                        class="text-sm leading-6 text-gray-300 ">Episodios
+                                        1-6</a>
+                                </li>
+                                <li>
+                                    <a href="episodio7-13.html"
+                                        class="text-sm leading-6 text-gray-300 ">Episodios
+                                        7-13</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-sm font-semibold leading-6 e">Galeria</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="Galeria.html" target="_blank"
+                                        class="text-sm leading-6 text-gray-300 ">Imagenes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-sm font-semibold leading-6 ">Contacto</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="emailContacto.html"
+                                        class="text-sm leading-6 text-gray-300 ">Email</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    </body>
+</html>

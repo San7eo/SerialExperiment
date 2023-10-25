@@ -20,90 +20,169 @@
 --pomp-and-power-2: #77588Cff;
 --rose-quartz: #AE8DA9ff;-->
   <body
-    class="bg-gradient-to-tr from-[#AE8DA9ff] to-[#7A5573ff] opacity-88 text-[#EED4E6ff] "
+    class="bg-gradient-to-tr from-[#AE8DA9ff] to-[#7A5573ff] opacity-88 text-[#EED4E6ff]"
     style="font-family: 'Lato', sans-serif;">
     <!-- Header -->
     <header class="bg-[#2F232Cff] absolute inset-x-0 top-0 z-50 ">
-        <nav class="flex items-center text-xl p-6 lg:px-8"
-          aria-label="Global">
-          <div class="flex ">
-            <!--queda por sacarle los bordes a la imagen del logo-->
-            <a href="index.html" class="-m-1.5 p-1.5">
-              <span class="sr-only">Serial Experiments Lain</span>
-              <img class="h-8 "
-                src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
-                alt>
-            </a>
-          </div>
-          <div
-            class="flex items-center justify-between mx-auto text-sm lg:text-lg gap-x-6 font-semibold leading-6 text-[#EED4E6ff]">
-            <a href="#">Personajes</a>
-            <a href="#">Episodios</a>
-            <a href="Galeria.html">Galeria</a>
-            <a href="#">Contacto</a>
-          </div>
-        </nav>
-    </header>
-    <div class = "lg:pt-24 pt-32 text-[#2F232Cff]">
-        <div class="mt-2 text-3xl font-bold lg:tracking-tight lg:p-x-6 text-center" >
-            <h1 class = "flex justify-center">
-            Galeria de Serial Experiments Lain
-            </h1>
+      <nav class="flex items-center text-xl p-6 lg:px-8"
+        aria-label="Global">
+        <div class="flex ">
+          <!--queda por sacarle los bordes a la imagen del logo-->
+          <a href="index.html" class="-m-1.5">
+            <span class="sr-only">Serial Experiments Lain</span>
+            <img class="h-8 min-h-[2rem] "
+              src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
+              alt>
+          </a>
         </div>
-        <div class="mx-auto max-w-4xl py-10 lg:py-20 space-x-4 ">
-            <div class="flex justify-items-center lg:justify-items-between grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-16 ">
-                <a href="Imagenes/Serial-13resize (1).jpg" data-lightbox="Galeria" data-title="Envuelta en cables"><img width="192px" src="Imagenes/Miniatura1.jpg" alt="Lain envuelta en cables"></a>
-                <a href="Imagenes/Serial 19resize2.jpg" data-lightbox="Galeria" data-title="Mejorando a Navi"><img width="192px" src="Imagenes/miniatura19.jpg" alt="Lain en su habitacion"></a>
-                <a href="Imagenes/Serial-23resize2.jpg" data-lightbox="Galeria" data-title="Volviendo a casa"><img width="192px" src="Imagenes/miniatura23.jpg" alt="Lain volviendo de la escuela"></a>
-                <a href="Imagenes/Serial-1.jpg" data-lightbox="Galeria" data-title="Lain en cyberia"><img width="192px" src="Imagenes/miniatura4.jpg" alt="Lain en cyberia"></a>
-                <a href="Imagenes/Serial-5resize.jpg" data-lightbox="Galeria" data-title="Black and White"><img width="192px" src="Imagenes/miniatura5.jpg" alt="Lain black and white"></a>
-                <a href="Imagenes/Serial-6.jpg" data-lightbox="Galeria" data-title="Adultes"><img width="192px" src="Imagenes/miniatura6.jpg" alt="Lain Adulta"></a>
-                <a href="Imagenes/Serial-14resize.jpg" data-lightbox="Galeria" data-title="PresentDay"><img width="192px" src="Imagenes/miniatura7.jpg" alt="PresentDay"></a>
-                <a href="Imagenes/Serial-16recolor.jpg" data-lightbox="Galeria" data-title="Lain y amigxs"><img width="192px" src="Imagenes/miniatura8.jpg" alt="Lain y amigxs"></a>
-                <a href="Imagenes/Serial-18resize.jpg" data-lightbox="Galeria" data-title="Viaje en tren"><img width="192px" src="Imagenes/miniatura9.jpg" alt="Viaje en tren"></a>
-                <a href="Imagenes/Serial-17recolor.jpg" data-lightbox="Galeria" data-title="Multiples Personalidades"><img width="192px" src="Imagenes/miniatura10.jpg" alt="Multiples Personalidades"></a>
+        <div
+          class="flex items-center mx-auto text-sm lg:text-lg leading-6 text-[#EED4E6ff] space-x-4">
+          <div>
+            <button id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbarPER"
+              class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Personajes
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbarPER"
+              class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+              <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="familiaIwakura.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Familia
+                    Iwakura</a>
+                </li>
+                <li>
+                  <a href="personajeSecundario.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Personajes
+                    secundarios</a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div>
+            <button id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbarEPI"
+              class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Episodios
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbarEPI"
+              class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+              <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="episodio1-6.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios
+                    1-6</a>
+                </li>
+                <li>
+                  <a href="episodio7-13.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios
+                    7-13</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="Galeria.html">Galeria</a>
+          <a href="#">Contacto</a>
         </div>
+      </nav>
+    </header>
+    <div class="pt-5 text-[#2F232Cff]">
+      <div
+        class="mt-2 text-3xl font-bold lg:tracking-tight lg:p-x-6 text-center">
+        <h1 class="flex justify-center antialiased">
+          Galeria de Serial Experiments Lain
+        </h1>
+      </div>
+      <div class="mx-auto max-w-4xl py-10 lg:py-20 space-x-4 ">
+        <div
+          class="flex justify-items-center lg:justify-items-between grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-16 ">
+          <a href="Imagenes/Serial-13resize (1).jpg" data-lightbox="Galeria"
+            data-title="Envuelta en cables"><img width="192px"
+              src="Imagenes/Miniatura1.jpg" alt="Lain envuelta en cables"></a>
+          <a href="Imagenes/Serial 19resize2.jpg" data-lightbox="Galeria"
+            data-title="Mejorando a Navi"><img width="192px"
+              src="Imagenes/miniatura19.jpg" alt="Lain en su habitacion"></a>
+          <a href="Imagenes/Serial-23resize2.jpg" data-lightbox="Galeria"
+            data-title="Volviendo a casa"><img width="192px"
+              src="Imagenes/miniatura23.jpg" alt="Lain volviendo de la escuela"></a>
+          <a href="Imagenes/Serial-1.jpg" data-lightbox="Galeria"
+            data-title="Lain en cyberia"><img width="192px"
+              src="Imagenes/miniatura4.jpg" alt="Lain en cyberia"></a>
+          <a href="Imagenes/Serial-5resize.jpg" data-lightbox="Galeria"
+            data-title="Black and White"><img width="192px"
+              src="Imagenes/miniatura5.jpg" alt="Lain black and white"></a>
+          <a href="Imagenes/Serial-6.jpg" data-lightbox="Galeria"
+            data-title="Adultes"><img width="192px"
+              src="Imagenes/miniatura6.jpg" alt="Lain Adulta"></a>
+          <a href="Imagenes/Serial-14resize.jpg" data-lightbox="Galeria"
+            data-title="PresentDay"><img width="192px"
+              src="Imagenes/miniatura7.jpg" alt="PresentDay"></a>
+          <a href="Imagenes/Serial-16recolor.jpg" data-lightbox="Galeria"
+            data-title="Lain y amigxs"><img width="192px"
+              src="Imagenes/miniatura8.jpg" alt="Lain y amigxs"></a>
+          <a href="Imagenes/Serial-18resize.jpg" data-lightbox="Galeria"
+            data-title="Viaje en tren"><img width="192px"
+              src="Imagenes/miniatura9.jpg" alt="Viaje en tren"></a>
+          <a href="Imagenes/Serial-17recolor.jpg" data-lightbox="Galeria"
+            data-title="Multiples Personalidades"><img width="192px"
+              src="Imagenes/miniatura10.jpg" alt="Multiples Personalidades"></a>
+        </div>
+      </div>
     </div>
     <!-- Footer -->
     <!--queda por acomodar la imagen del logo-->
-    <footer class="mt-32 bg-[#2F232Cff]  flex p-6 "
+    <footer class="mt-20 bg-[#2F232Cff] flex flex-col p-6 "
       aria-labelledby="footer-heading">
       <h2 id="footer-heading" class="sr-only">Footer</h2>
-      <div class="flex ">
-        <a href="index.html" class="-m-1.5 p-1.5">
-          <img class="min-h-8 lg:h-8"
-          src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
-          alt="Navi">
+      <div class="grid grid-cols-8 w-full items-center justify-items-center">
+        <a href="index.html" class="-m-1.5 p-1.5 col-span-2 justify-self-start">
+          <img class="h-8 min-h-[2rem]"
+            src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
+            alt="Navi">
         </a>
-      </div>
-      <div class="mx-auto max-w-7xl py-10">
-        <div class="flex justify-center ">
+        <div class="flex justify-center col-span-4 ">
           <!--queda por sacarle los bordes a la imagen del logo-->
           <ul role="list" class="flex mt-6 space-x-4 justify-items-between mb-6">
             <li>
-              <a>
+              <a href="https://es-la.facebook.com/groups/1724040977909569/"
+                target="_blank">
                 <img class="h-8 "
                   src="Imagenes/redes/icons8-facebook-rodeado-de-círculo-128.png"
                   alt>
               </a>
             </li>
             <li>
-              <a>
+              <a href="https://www.instagram.com/p/CtM9UEbPxKW/?img_index=10"
+                target="_blank">
                 <img class="h-8 "
                   src="Imagenes/redes/icons8-instagram-128.png"
                   alt>
               </a>
             </li>
             <li>
-              <a>
+              <a
+                href="https://www.youtube.com/results?search_query=rick+roll+meme"
+                target="_blank">
                 <img class="h-8 "
                   src="Imagenes/redes/icons8-stockx-128.png"
                   alt>
               </a>
             </li>
             <li>
-              <a>
+              <a href="https://www.youtube.com/watch?v=s0NME1GfbIc"
+                target="_blank">
                 <img class="h-8"
                   src="Imagenes/redes/icons8-youtube-play-128.png"
                   alt>
@@ -111,34 +190,36 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="mx-auto max-w-7xl lg:py-2 text-center">
         <div class="flex">
           <div
-            class="lg:mt-16 grid grid-cols-4 gap-12 col-span-2 mt-0">
+            class="lg:mt-4 grid grid-cols-4 gap-12 col-span-2 mt-0">
             <div>
               <h3
                 class="text-sm font-semibold leading-6 ">Personajes</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#"
+                  <a href="familiaIwakura.html"
                     class="text-sm leading-6 text-gray-300 ">Familia Iwakura</a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="personajeSecundario.html"
                     class="text-sm leading-6 text-gray-300 ">Personajes
                     secundarios</a>
                 </li>
               </ul>
             </div>
-            <div >
+            <div>
               <h3
                 class="text-sm font-semibold leading-6 ">Episodios</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#"
+                  <a href="episodio1-6.html"
                     class="text-sm leading-6 text-gray-300 ">Episodios 1-6</a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="episodio7-13.html"
                     class="text-sm leading-6 text-gray-300 ">Episodios 7-13</a>
                 </li>
               </ul>
@@ -148,12 +229,8 @@
                 class="text-sm font-semibold leading-6 e">Galeria</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#"
-                    class="text-sm leading-6 text-gray-300 ">Lain</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="text-sm leading-6 text-gray-300 ">Entorno</a>
+                  <a href="Galeria.html" target="_blank"
+                    class="text-sm leading-6 text-gray-300 ">Imagenes</a>
                 </li>
               </ul>
             </div>
@@ -162,12 +239,8 @@
                 class="text-sm font-semibold leading-6 ">Contacto</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li>
-                  <a href="#"
+                  <a href="emailContacto.html"
                     class="text-sm leading-6 text-gray-300 ">Email</a>
-                </li>
-                <li>
-                  <a href="#"
-                    class="text-sm leading-6 text-gray-300 ">Chat Online</a>
                 </li>
               </ul>
             </div>
@@ -175,6 +248,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/lightbox-plus-jquery.js"></script>
+    <script
+      src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
   </body>
 </html>
