@@ -1,13 +1,11 @@
 
 body {
   background-image: url('/Imagenes/Serial-21.jpg');
-  /*background-size: cover; /* Para cubrir completamente el fondo */
+  /*background-size: cover; Para cubrir completamente el fondo */
   background-position: center;
+  background-attachment: fixed;
   min-height: 100vh;
  /* Para centrar la imagen de fondo */
   /* Tu otro estilo para el cuerpo puede ir aquí */
 }
 
-.bg-custom {
-    
-}
