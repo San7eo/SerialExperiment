@@ -9,3 +9,18 @@ body {
   /* Tu otro estilo para el cuerpo puede ir aquí */
 }
 
+.menu-hamburguesa svg line{
+  stroke: #EED4E6ff;
+}
+  
+.mailBG{
+  background-image: url('/Imagenes/Serial-20resize.jpg');
+  /*background-size: cover; Para cubrir completamente el fondo */
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  
+ /* Para centrar la imagen de fondo */
+  /* Tu otro estilo para el cuerpo puede ir aquí */
+}
+

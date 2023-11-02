@@ -14,13 +14,13 @@
         <title>Serial Experiments Lain: emailContacto </title>
     </head>
     <body
-        class="bg-gradient-to-tr from-[#00061Fff] to-[#2F232Cff] opacity-88 text-[#EED4E6ff]"
+        class="mailBG h-screen text-[#EED4E6ff] "
         style="font-family: 'Lato', sans-serif;">
         <!-- Header -->
         <header class="bg-[#2F232Cff] absolute inset-x-0 top-0 z-50 ">
-            <nav class="flex items-center text-xl p-6 lg:px-8"
+            <nav class="flex lg:items-center text-xl p-6 lg:px-8"
                 aria-label="Global">
-                <div class="flex ">
+                <div class="flex items-center">
                     <!--queda por sacarle los bordes a la imagen del logo-->
                     <a href="index.html" class="-m-1.5 opacity-80 ">
                         <span class="sr-only">Serial Experiments Lain</span>
@@ -28,9 +28,72 @@
                             src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
                             alt>
                     </a>
+
+                    <div class="lg:hidden pl-4 ">
+                        <button id="toggleMenu"
+                            class="menu-hamburguesa p-2 focus:outline-none">
+                            <svg width="40px" height="40px" viewBox="0 0 32 32"
+                                enable-background="new 0 0 32 32"
+                                id="Editable-line" version="1.1"
+                                xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <line fill="none" id="XMLID_103_" stroke="#0000"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10" stroke-width="2"
+                                    x1="7" x2="25" y1="16" y2="16" />
+                                <line fill="none" id="XMLID_102_" stroke="#0000"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10"
+                                    stroke-width="2" x1="7" x2="25" y1="25"
+                                    y2="25" />
+                                <line fill="none" id="XMLID_101_" stroke="#0000"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-miterlimit="10" stroke-width="2"
+                                    x1="7" x2="25" y1="7" y2="7" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
+
+                <!-- Menú desplegable -->
+                <div id="menuDesplegable"
+                    class="lg:hidden fixed inset-0 bg-[#2F232C] bg-opacity-95 z-50 hidden">
+                    <div class="flex justify-end p-4">
+                        <button id="closeMenu"
+                            class=" focus:outline-none">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 111.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <!-- Enlaces para los menús desplegables originales -->
+                        <a href="familiaIwakura.html"
+                            class="py-2 hover:text-[#996F9Aff]">Familia Iwakura</a>
+                        <a href="personajeSecundario.html"
+                            class="py-2 hover:text-[#996F9Aff]">Personajes
+                            secundarios</a>
+                        <a href="episodio1-6.html"
+                            class="py-2 hover:text-[#996F9Aff]">Episodios 1-6</a>
+                        <a href="episodio7-13.html"
+                            class="py-2 hover:text-[#996F9Aff]">Episodios 7-13</a>
+                        <a href="Galeria.html"
+                            class="py-2 hover:text-[#996F9Aff]">Visual Wired</a>
+                        <a href="emailContacto.html"
+                            class="py-2 hover:text-[#996F9Aff]">MSJ via Email</a>
+                    </div>
+                </div>
+
                 <div
-                    class="grid grid-cols-2 gap-2 justify-items-center lg:flex lg:items-center mx-auto text-sm lg:text-lg leading-6 text-[#EED4E6ff] space-x-4">
+                    class="grid grid-cols-2 gap-2 justify-items-center lg:flex lg:items-center mx-auto text-sm lg:text-lg leading-6 text-[#EED4E6ff] space-x-4 hidden lg:visible">
                     <div>
                         <button id="dropdownNavbarLink"
                             data-dropdown-toggle="dropdownNavbarPER"
@@ -146,34 +209,48 @@
         </header>
 
         <div class="pt-20 ">
-            <div class="flex flex-col mx-auto space-y-2 px-1 my-4 pb-2 mt-10 pl-4">
+            <div
+                class="flex flex-col justify-center mx-auto space-y-2 px-1 my-4 pb-2 mt-10 mx-2 ">
                 <div
-                    class="border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+                    class="border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061Fdd] ">
                     <div>
                         <h1
                             class="mt-2 lg:ml-16 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-6">
                             <span
-                                class="text-[#63538e] text-2xl text-start lg:place-items-end">Contacto via Email
+                                class="text-[#63538e] text-2xl text-start lg:place-items-end">Contacto
+                                via Email
                             </span>
                         </h1>
-                        <div class = "flex justify-center">
+                        <div class="flex justify-center">
                             <form id="contactForm" class="mt-2">
                                 <div class="mb-4">
-                                    <label for="nombre" class="block text-lg font-medium ">Nombre:</label>
-                                    <input type="text" id="nombre" name="nombre" required class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-[#01426755] bg-[#2F232Cff]">
+                                    <label for="nombre"
+                                        class="block text-lg font-medium ">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre"
+                                        required
+                                        class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-[#01426755] bg-[#2F232Cff]">
                                 </div>
                                 <div class="mb-4">
-                                    <label for="email" class="block text-lg font-medium ">Correo Electrónico:</label>
-                                    <input type="email" id="email" name="email" required class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-[#01426755] bg-[#2F232Cff]">
+                                    <label for="email"
+                                        class="block text-lg font-medium ">Correo
+                                        Electrónico:</label>
+                                    <input type="email" id="email" name="email"
+                                        required
+                                        class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-[#01426755] bg-[#2F232Cff]">
                                 </div>
                                 <div class="mb-4">
-                                    <label for="mensaje" class="block text-lg font-medium ">Mensaje:</label>
-                                    <textarea id="mensaje" name="mensaje" rows="8" class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-[#01426755] bg-[#2F232Cff]"
+                                    <label for="mensaje"
+                                        class="block text-lg font-medium ">Mensaje:</label>
+                                    <textarea id="mensaje" name="mensaje"
+                                        rows="8"
+                                        class="mt-1 p-2 border rounded-md w-full focus:outline-none focus:ring focus:border-[#01426755] bg-[#2F232Cff]"
                                         required></textarea>
                                 </div>
-                                <div class="flex space-x-4">
-                                    <button type="submit" class="px-4 py-2 bg-[#01426755] rounded-md hover:bg-[#01426755] bg-[#2F232Cff]">Enviar</button>
-                                    <button type="reset" class="px-4 py-2 bg-[#01426755]  rounded-md hover:bg-[#01426755] bg-[#2F232Cff]">Resetear</button>
+                                <div class="flex space-x-4 pb-4">
+                                    <button type="submit"
+                                        class="px-4 py-2 bg-[#01426755] rounded-md hover:bg-[#01426755] bg-[#2F232Cff]">Enviar</button>
+                                    <button type="reset"
+                                        class="px-4 py-2 bg-[#01426755]  rounded-md hover:bg-[#01426755] bg-[#2F232Cff]">Resetear</button>
                                 </div>
                             </form>
                         </div>
@@ -181,123 +258,137 @@
                 </div>
             </div>
         </div>
-            <!-- Footer -->
-            <!--queda por acomodar la imagen del logo-->
+        <!-- Footer -->
+        <!--queda por acomodar la imagen del logo-->
         <footer class="mt-20 bg-[#2F232Cff] flex flex-col p-4 lg:p-6 "
-                aria-labelledby="footer-heading">
-                <h2 id="footer-heading" class="sr-only">Footer</h2>
-                <div
-                    class="grid grid-cols-8 w-full items-center justify-items-center">
-                    <a href="index.html"
-                        class="-m-1.5 col-span-2 justify-self-center">
-                        <img class="h-12 lg:h-8 min-h-[2rem] opacity-80"
-                            src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
-                            alt="Navi">
-                    </a>
-                    <div class="flex justify-center col-span-4 ">
-                        <!--queda por sacarle los bordes a la imagen del logo-->
-                        <ul role="list"
-                            class="flex mt-6 space-x-2 justify-items-between mb-6">
-                            <li>
-                                <a
-                                    href="https://es-la.facebook.com/groups/1724040977909569/"
-                                    target="_blank">
-                                    <img class="h-8 "
-                                        src="Imagenes/redes/icons8-facebook-rodeado-de-círculo-128.png"
-                                        alt>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.instagram.com/p/CtM9UEbPxKW/?img_index=10"
-                                    target="_blank">
-                                    <img class="h-8 "
-                                        src="Imagenes/redes/icons8-instagram-128.png"
-                                        alt>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.youtube.com/results?search_query=rick+roll+meme"
-                                    target="_blank">
-                                    <img class="h-8 "
-                                        src="Imagenes/redes/icons8-stockx-128.png"
-                                        alt>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.youtube.com/watch?v=s0NME1GfbIc"
-                                    target="_blank">
-                                    <img class="h-8"
-                                        src="Imagenes/redes/icons8-youtube-play-128.png"
-                                        alt>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+            aria-labelledby="footer-heading">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div
+                class="grid grid-cols-8 w-full items-center justify-items-center">
+                <a href="index.html"
+                    class="-m-1.5 col-span-2 justify-self-center">
+                    <img class="h-12 lg:h-8 min-h-[2rem] opacity-80"
+                        src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
+                        alt="Navi">
+                </a>
+                <div class="flex justify-center col-span-4 ">
+                    <!--queda por sacarle los bordes a la imagen del logo-->
+                    <ul role="list"
+                        class="flex mt-6 space-x-2 justify-items-between mb-6">
+                        <li>
+                            <a
+                                href="https://es-la.facebook.com/groups/1724040977909569/"
+                                target="_blank">
+                                <img class="h-8 "
+                                    src="Imagenes/redes/icons8-facebook-rodeado-de-círculo-128.png"
+                                    alt>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/p/CtM9UEbPxKW/?img_index=10"
+                                target="_blank">
+                                <img class="h-8 "
+                                    src="Imagenes/redes/icons8-instagram-128.png"
+                                    alt>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/results?search_query=rick+roll+meme"
+                                target="_blank">
+                                <img class="h-8 "
+                                    src="Imagenes/redes/icons8-stockx-128.png"
+                                    alt>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.youtube.com/watch?v=s0NME1GfbIc"
+                                target="_blank">
+                                <img class="h-8"
+                                    src="Imagenes/redes/icons8-youtube-play-128.png"
+                                    alt>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="mx-auto max-w-7xl lg:py-2 text-center">
-                    <div class="flex">
-                        <div
-                            class="lg:mt-4 grid grid-cols-4 gap-12 col-span-2 mt-0">
-                            <div>
-                                <h3
-                                    class="text-sm font-semibold leading-6 ">Personajes</h3>
-                                <ul role="list" class="mt-6 space-y-4">
-                                    <li>
-                                        <a href="familiaIwakura.html"
-                                            class="text-sm leading-6 text-gray-300 ">Familia
-                                            Iwakura</a>
-                                    </li>
-                                    <li>
-                                        <a href="personajeSecundario.html"
-                                            class="text-sm leading-6 text-gray-300 ">Personajes
-                                            secundarios</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3
-                                    class="text-sm font-semibold leading-6 ">Episodios</h3>
-                                <ul role="list" class="mt-6 space-y-4">
-                                    <li>
-                                        <a href="episodio1-6.html"
-                                            class="text-sm leading-6 text-gray-300 ">Episodios
-                                            1-6</a>
-                                    </li>
-                                    <li>
-                                        <a href="episodio7-13.html"
-                                            class="text-sm leading-6 text-gray-300 ">Episodios
-                                            7-13</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3
-                                    class="text-sm font-semibold leading-6 e">Galeria</h3>
-                                <ul role="list" class="mt-6 space-y-4">
-                                    <li>
-                                        <a href="Galeria.html"
-                                            class="text-sm leading-6 text-gray-300 ">Imagenes</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3
-                                    class="text-sm font-semibold leading-6 ">Contacto</h3>
-                                <ul role="list" class="mt-6 space-y-4">
-                                    <li>
-                                        <a href="emailContacto.html"
-                                            class="text-sm leading-6 text-gray-300 ">Email</a>
-                                    </li>
-                                </ul>
-                            </div>
+            </div>
+            <div class="mx-auto max-w-7xl lg:py-2 text-center">
+                <div class="flex">
+                    <div
+                        class="lg:mt-4 grid grid-cols-4 gap-12 col-span-2 mt-0">
+                        <div>
+                            <h3
+                                class="text-sm font-semibold leading-6 ">Personajes</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="familiaIwakura.html"
+                                        class="text-sm leading-6 text-gray-300 ">Familia
+                                        Iwakura</a>
+                                </li>
+                                <li>
+                                    <a href="personajeSecundario.html"
+                                        class="text-sm leading-6 text-gray-300 ">Personajes
+                                        secundarios</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-sm font-semibold leading-6 ">Episodios</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="episodio1-6.html"
+                                        class="text-sm leading-6 text-gray-300 ">Episodios
+                                        1-6</a>
+                                </li>
+                                <li>
+                                    <a href="episodio7-13.html"
+                                        class="text-sm leading-6 text-gray-300 ">Episodios
+                                        7-13</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-sm font-semibold leading-6 e">Galeria</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="Galeria.html"
+                                        class="text-sm leading-6 text-gray-300 ">Imagenes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3
+                                class="text-sm font-semibold leading-6 ">Contacto</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="emailContacto.html"
+                                        class="text-sm leading-6 text-gray-300 ">Email</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
         </footer>
         <script
             src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
+        <script>
+                const toggleButton = document.getElementById('toggleMenu');
+                const closeButton = document.getElementById('closeMenu');
+                const menuDesplegable = document.getElementById('menuDesplegable');
+              
+                toggleButton.addEventListener('click', () => {
+                  menuDesplegable.classList.toggle('hidden');
+                });
+              
+                closeButton.addEventListener('click', () => {
+                  menuDesplegable.classList.add('hidden');
+                });
+              </script>
     </body>
 </html>

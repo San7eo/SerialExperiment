@@ -1,442 +1,560 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
-        <link rel="icon" href="favicon.ico">
-        <title>Serial Experiments Lain: Episodios 1-6 </title>
-    </head>
-    <!--/* CSS HEX */
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>Serial Experiments Lain: Episodios 1-6 </title>
+  </head>
+  <!--/* CSS HEX */
 --pomp-and-power: #996F9Aff;
 --chinese-violet: #7A5573ff;
 --raisin-black: #2F232Cff;
 --pomp-and-power-2: #77588Cff;
 --rose-quartz: #AE8DA9ff;-->
-    <body
-        class="bg-gradient-to-tr from-[#00061Fff] to-[#2F232Cff] opacity-88 text-[#EED4E6ff]"
-        style="font-family: 'Lato', sans-serif;">
-        <!-- Header -->
-        <header class="bg-[#2F232Cff] absolute inset-x-0 top-0 z-50 ">
-            <nav class="flex items-center text-xl p-6 lg:px-8"
-              aria-label="Global">
-              <div class="flex ">
-                <!--queda por sacarle los bordes a la imagen del logo-->
-                <a href="index.html" class="-m-1.5 opacity-80 ">
-                  <span class="sr-only">Serial Experiments Lain</span>
-                  <img class="h-12 lg:h-8 min-h-[2rem] "
-                    src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
-                    alt>
-                </a>
-              </div>
-              <div
-                class="grid grid-cols-2 gap-2 justify-items-center lg:flex lg:items-center mx-auto text-sm lg:text-lg leading-6 text-[#EED4E6ff] space-x-4">
-                  <div>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarPER" class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Personajes 
-                      <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                      </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownNavbarPER" class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
-                        <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                        <li>
-                            <a href="familiaIwakura.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Familia Iwakura</a>
-                        </li>
-                        <li>
-                            <a href="personajeSecundario.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Personajes secundarios</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-                  <div>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarEPI" class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Episodios 
-                      <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                      </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownNavbarEPI" class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
-                        <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                        <li>
-                            <a href="episodio1-6.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios 1-6</a>
-                        </li>
-                        <li>
-                            <a href="episodio7-13.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios 7-13</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-                  <div>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarGal" class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Galeria 
-                      <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                      </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownNavbarGal" class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
-                        <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                        <li>
-                            <a href="Galeria.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Visual Wired</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-                  <div>
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarCON" class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Contacto 
-                      <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                      </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdownNavbarCON" class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
-                        <ul class="py-1" aria-labelledby="dropdownLargeButton">
-                        <li>
-                            <a href="emailContacto.html" class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">MSJ via Email</a>
-                        </li>
-                        </ul>
-                    </div>
-                  </div>
-              </div>
-            </nav>
-          </header>
+  <body
+    class="bg-gradient-to-tr from-[#00061Fff] to-[#2F232Cff] opacity-88 text-[#EED4E6ff]"
+    style="font-family: 'Lato', sans-serif;">
+    <!-- Header -->
+    <header class="bg-[#2F232Cff] absolute inset-x-0 top-0 z-50 ">
+      <nav class="flex lg:items-center text-xl p-6 lg:px-8"
+        aria-label="Global">
+        <div class="flex items-center">
+          <!--queda por sacarle los bordes a la imagen del logo-->
+          <a href="index.html" class="-m-1.5 opacity-80 ">
+            <span class="sr-only">Serial Experiments Lain</span>
+            <img class="h-12 lg:h-8 min-h-[2rem] "
+              src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
+              alt>
+          </a>
 
-        <div class="pt-20 ">
+          <div class="lg:hidden pl-4 ">
+            <button id="toggleMenu"
+              class="menu-hamburguesa p-2 focus:outline-none">
+              <svg width="40px" height="40px" viewBox="0 0 32 32"
+                enable-background="new 0 0 32 32"
+                id="Editable-line" version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <line fill="none" id="XMLID_103_" stroke="#0000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10" stroke-width="2"
+                  x1="7" x2="25" y1="16" y2="16" />
+                <line fill="none" id="XMLID_102_" stroke="#0000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10"
+                  stroke-width="2" x1="7" x2="25" y1="25"
+                  y2="25" />
+                <line fill="none" id="XMLID_101_" stroke="#0000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="10" stroke-width="2"
+                  x1="7" x2="25" y1="7" y2="7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Menú desplegable -->
+        <div id="menuDesplegable"
+          class="lg:hidden fixed inset-0 bg-[#2F232C] bg-opacity-95 z-50 hidden">
+          <div class="flex justify-end p-4">
+            <button id="closeMenu"
+              class=" focus:outline-none">
+              <svg class="w-6 h-6" fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 111.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-col items-center">
+            <!-- Enlaces para los menús desplegables originales -->
+            <a href="familiaIwakura.html"
+              class="py-2 hover:text-[#996F9Aff]">Familia Iwakura</a>
+            <a href="personajeSecundario.html"
+              class="py-2 hover:text-[#996F9Aff]">Personajes
+              secundarios</a>
+            <a href="episodio1-6.html"
+              class="py-2 hover:text-[#996F9Aff]">Episodios 1-6</a>
+            <a href="episodio7-13.html"
+              class="py-2 hover:text-[#996F9Aff]">Episodios 7-13</a>
+            <a href="Galeria.html"
+              class="py-2 hover:text-[#996F9Aff]">Visual Wired</a>
+            <a href="emailContacto.html"
+              class="py-2 hover:text-[#996F9Aff]">MSJ via Email</a>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-2 gap-2 justify-items-center lg:flex lg:items-center mx-auto text-sm lg:text-lg leading-6 text-[#EED4E6ff] space-x-4 hidden lg:visible">
+          <div>
+            <button id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbarPER"
+              class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Personajes
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbarPER"
+              class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+              <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="familiaIwakura.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Familia
+                    Iwakura</a>
+                </li>
+                <li>
+                  <a href="personajeSecundario.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Personajes
+                    secundarios</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <button id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbarEPI"
+              class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Episodios
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbarEPI"
+              class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+              <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="episodio1-6.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios
+                    1-6</a>
+                </li>
+                <li>
+                  <a href="episodio7-13.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Episodios
+                    7-13</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <button id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbarGal"
+              class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Galeria
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbarGal"
+              class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+              <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="Galeria.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">Visual
+                    Wired</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <button id="dropdownNavbarLink"
+              data-dropdown-toggle="dropdownNavbarCON"
+              class="hover:bg-[#2F232Cff] border-[#2F232Cff] hover:bg-transparent border-0 hover:text-[#996F9Aff] lg:p-0 flex items-center w-full w-auto">Contacto
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbarCON"
+              class="hidden bg-[#2F232Cff] text-base z-10 list-none divide-y divide-[#AE8DA9ff] rounded shadow my-4 w-44">
+              <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="emailContacto.html"
+                    class="text-sm hover:bg-[#996F9Aff] text-[#EED4E6ff] block px-4 py-2">MSJ
+                    via Email</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="pt-20 ">
+      <div
+        class="my-4 text-2xl font-bold lg:tracking-tight lg:p-x-6 text-center pb-2 mt-10 pl-4">
+        <h1 class="flex justify-start text-[#77588Cf9] ">
+          Episodios 7-13
+        </h1>
+      </div>
+      <div class="flex flex-col mx-auto space-y-2 px-1">
+        <div
+          class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+          <div
+            class=" flex h-48 w-fit lg:h-fit items-center pt-14 pe-2 lg:pe-0 lg:pt-0">
             <div
-                class="my-4 text-2xl font-bold lg:tracking-tight lg:p-x-6 text-center pb-2 mt-10 pl-4">
-                <h1 class="flex justify-start text-[#77588Cf9] ">
-                    Episodios 7-13
-                </h1>
+              class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+              <img src="Imagenes/layer07re.jpg" alt="Layer 07 "
+                class="inset-0 object-cover ">
             </div>
-            <div class="flex flex-col mx-auto space-y-2 px-1">
-                <div
-                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
-                    <div
-                        class=" flex h-48 w-fit lg:h-fit items-center pt-14 pe-2 lg:pe-0 lg:pt-0">
-                        <div
-                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
-                            <img src="Imagenes/layer07re.jpg" alt="Layer 07 "
-                                class="inset-0 object-cover ">
-                        </div>
-                    </div>
-                    <div>
-                        <h2
-                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
-                            <span class="text-[#63538e] lg:place-items-end">Layer07:
-                            </span>
-                            <span
-                                class="text-[#EED4E6ff] text-center text-3xl lg:place-items-end">Society</span>
-                        </h2>
-                        <p
-                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">La
-                            actividad de Los Knights comienza con la mejora de
-                            lo que ellos habían iniciado.
-                            Lain se ve cada vez más comprometida con la Red y se
-                            conecta hasta en las clases a través de su navegador
-                            manual. Comienza a preocuparse por su verdadero ser.
-                            Los Hombres de Negro finalmente llevan a Lain a la
-                            Oficina Tachibana y la interrogan sobre sus orígenes
-                            y sus padres. </p>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
-                    <div
-                        class=" flex  h-48 w-fit lg:h-fit items-center pe-2 lg:pe-0 lg:pt-0">
-                        <div
-                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
-                            <img src="Imagenes/layer08re.jpg" alt="Layer 08 "
-                                class="inset-0 object-cover ">
-                        </div>
-                    </div>
-                    <div>
-                        <h2
-                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
-                            <span class="text-[#63538e] lg:place-items-end">Layer08:
-                            </span>
-                            <span
-                                class="text-[#EED4E6ff] text-3xl text-center  lg:place-items-end">Rumors</span>
-                        </h2>
-                        <p
-                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Lain
-                            está investigando la Red.
-                            Un rumor es difundido sobre las fantasías sexuales
-                            que tiene Arisu con un profesor, y en algún momento
-                            se dice que Lain fue quien lo difundió. </p>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
-                    <div
-                        class=" flex h-48 w-fit lg:h-fit items-center pt-14 pe-2 lg:pe-0 lg:pt-0">
-                        <div
-                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
-                            <img src="Imagenes/layer09re.jpg" alt="Layer 09 "
-                                class="inset-0 object-cover ">
-                        </div>
-                    </div>
-                    <div>
-                        <h2
-                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
-                            <span class="text-[#63538e] lg:place-items-end">layer09:
-                            </span>
-                            <span
-                                class="text-[#EED4E6ff] text-3xl text-center  lg:place-items-end">Protocol</span>
-                        </h2>
-                        <p
-                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Durante
-                            el episodio, muestran información de fondo sobre
-                            "archivos" acerca del Caso Roswell,
-                            Majestic 12, Vannevar Bush, Ted Nelson, John C.
-                            Lilly, la Resonancia Schumann, Douglas Rushkoff y
-                            Eiri Masami, quien agregó una función para usar el
-                            séptimo protocolo IP.
-                            Durante ese tiempo, Lain obtiene un microchip de JJ,
-                            El DJ del club nocturno Cyberia. Ella luego pregunta
-                            a Taro sobre su uso, pero dice no saberlo.
-                            Después, sintiéndose intimidado por la muerte, él
-                            admite que es un código diseñado por los Knights
-                            para disolver la memoria humana.
-                            Él los defiende pero admite no conocer mucho sobre
-                            ellos. </p>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
-                    <div
-                        class=" flex h-48 w-fit lg:h-fit items-center pe-2 lg:pe-0 lg:pt-0">
-                        <div
-                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
-                            <img src="Imagenes/layer10re.jpg" alt="Layer 10 "
-                                class="inset-0 object-cover ">
-                        </div>
-                    </div>
-                    <div>
-                        <h2
-                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
-                            <span class="text-[#63538e] lg:place-items-end">layer10:
-                            </span>
-                            <span
-                                class="text-[#EED4E6ff] text-3xl text-center  lg:place-items-end">Love</span>
-                        </h2>
-                        <p
-                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Eiri
-                            Masami se presenta a sí mismo como Dios, explica que
-                            lo es por causa de sus diseñadores,
-                            Los Knights, quienes crearon el
-                            "grupo de la inconsciencia" en la red.
-                            Lain ve la lista de los integrantes y hace un trato
-                            con ellos. </p>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
-                    <div
-                        class=" flex h-48 w-fit lg:h-fit items-center pt-14 pe-2 lg:pe-0 lg:pt-0">
-                        <div
-                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
-                            <img src="Imagenes/layer11re.jpg" alt="Layer 11 "
-                                class="inset-0 object-cover ">
-                        </div>
-                    </div>
-                    <div>
-                        <h2
-                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
-                            <span class="text-[#63538e] lg:place-items-end">layer11:
-                            </span>
-                            <span
-                                class="text-[#EED4E6ff] text-xl text-center lg:text-3xl lg:place-items-end">Infornography</span>
-                        </h2>
-                        <p
-                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Lain
-                            aparece tendida y exhausta en su alcoba, cubierta
-                            por cables eléctricos.
-                            En complejos flashbacks, Eiri aparece para
-                            felicitarla por haber hecho la transferencia del
-                            ordenador al cerebro
-                            y le advierte que es un software pero el cerebro
-                            tiene buena capacidad de hardware.
-                            Lain se lo presenta a Arisu, y comenta la
-                            posibilidad de borrar sus fantasías sexuales con el
-                            profesor de la red, ya que los otros no usaban
-                            dispositivo alguno;
-                            y que restablecerá su buena reputación en la red.
-                            Al día siguiente ninguno recuerda los rumores ni el
-                            incidente, y Lain sonríe en complicidad con Arisu.
-                        </p>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
-                    <div
-                        class=" flex h-48 w-fit lg:h-fit items-center pt-14 pe-2 lg:pe-0 lg:pt-0">
-                        <div
-                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
-                            <img src="Imagenes/layer12re.jpg" alt="Layer 12 "
-                                class="inset-0 object-cover ">
-                        </div>
-                    </div>
-                    <div>
-                        <h2
-                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
-                            <span class="text-[#63538e] lg:place-items-end">layer12:
-                            </span>
-                            <span
-                                class="text-[#EED4E6ff] text-2xl text-center lg:text-3xl lg:place-items-end">Landscape</span>
-                        </h2>
-                        <p
-                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">La
-                            frontera entre el mundo real y el virtual se
-                            derrumba.
-                            La perfección del séptimo protocolo da origen al
-                            amor. Los Hombres de Negro reciben el pago final por
-                            parte de su empleador.
-                            Eiri Masami hace su aparición final, tiene una
-                            fuerte confrontación con Lain en presencia de Arisu
-                            quien sufre un desmayo. </p>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
-                    <div
-                        class=" flex h-48 w-fit lg:h-fit items-center pe-2 lg:pe-0 lg:pt-0">
-                        <div
-                            class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
-                            <img src="Imagenes/layer13re.jpg" alt="Layer 13 "
-                                class="inset-0 object-cover ">
-                        </div>
-                    </div>
-                    <div>
-                        <h2
-                            class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
-                            <span class="text-[#63538e] lg:place-items-end">layer13:
-                            </span>
-                            <span
-                                class="text-[#EED4E6ff] text-3xl text-center lg:place-items-end">Ego</span>
-                        </h2>
-                        <p
-                            class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-right">Lain
-                            resuelve sus preguntas internas sobre su identidad
-                            y toma una decisión radical: Borrarse de la memoria
-                            de todos quienes la recuerdan. </p>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div>
+            <h2
+              class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
+              <span class="text-[#63538e] lg:place-items-end">Layer07:
+              </span>
+              <span
+                class="text-[#EED4E6ff] text-center text-3xl lg:place-items-end">Society</span>
+            </h2>
+            <p
+              class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-left">La
+              actividad de Los Knights comienza con la mejora de
+              lo que ellos habían iniciado.
+              Lain se ve cada vez más comprometida con la Red y se
+              conecta hasta en las clases a través de su navegador
+              manual. Comienza a preocuparse por su verdadero ser.
+              Los Hombres de Negro finalmente llevan a Lain a la
+              Oficina Tachibana y la interrogan sobre sus orígenes
+              y sus padres. </p>
+          </div>
         </div>
         <div
-            class="my-1 text-2xl font-bold lg:tracking-tight lg:p-x-6 text-end pt-10 pr-12">
-            <a href="episodio1-6.html"
-                class="flex justify-end text-[#77588Cf9] ">Episodio 1-6</a>
-        </div>
-        <!-- Footer -->
-        <!--queda por acomodar la imagen del logo-->
-        <footer class="mt-20 bg-[#2F232Cff] flex flex-col p-4 lg:p-6 "
-        aria-labelledby="footer-heading">
-        <h2 id="footer-heading" class="sr-only">Footer</h2>
-        <div class="grid grid-cols-8 w-full items-center justify-items-center">
-          <a href="index.html" class="-m-1.5 col-span-2 justify-self-center">
-            <img class="h-12 lg:h-8 min-h-[2rem] opacity-80"
-            src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
-            alt="Navi">
-          </a>
-          <div class="flex justify-center col-span-4 ">
-            <!--queda por sacarle los bordes a la imagen del logo-->
-            <ul role="list" class="flex mt-6 space-x-2 justify-items-between mb-6">
-              <li>
-                <a href ="https://es-la.facebook.com/groups/1724040977909569/" target="_blank" >
-                  <img class="h-8 "
-                    src="Imagenes/redes/icons8-facebook-rodeado-de-círculo-128.png"
-                    alt>
-                </a>
-              </li>
-              <li>
-                <a href ="https://www.instagram.com/p/CtM9UEbPxKW/?img_index=10" target="_blank" >
-                  <img class="h-8 "
-                    src="Imagenes/redes/icons8-instagram-128.png"
-                    alt>
-                </a>
-              </li>
-              <li>
-                <a href = "https://www.youtube.com/results?search_query=rick+roll+meme" target = "_blank">
-                  <img class="h-8 "
-                    src="Imagenes/redes/icons8-stockx-128.png"
-                    alt>
-                </a>
-              </li>
-              <li>
-                <a href ="https://www.youtube.com/watch?v=s0NME1GfbIc" target="_blank">
-                  <img class="h-8"
-                    src="Imagenes/redes/icons8-youtube-play-128.png"
-                    alt>
-                </a>
-              </li>
-            </ul>
+          class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+          <div
+            class=" flex  h-48 w-fit lg:h-fit items-center pe-2 lg:pe-0 lg:pt-0">
+            <div
+              class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+              <img src="Imagenes/layer08re.jpg" alt="Layer 08 "
+                class="inset-0 object-cover ">
+            </div>
+          </div>
+          <div>
+            <h2
+              class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
+              <span class="text-[#63538e] lg:place-items-end">Layer08:
+              </span>
+              <span
+                class="text-[#EED4E6ff] text-3xl text-center  lg:place-items-end">Rumors</span>
+            </h2>
+            <p
+              class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-left">Lain
+              está investigando la Red.
+              Un rumor es difundido sobre las fantasías sexuales
+              que tiene Arisu con un profesor, y en algún momento
+              se dice que Lain fue quien lo difundió. </p>
           </div>
         </div>
-        <div class="mx-auto max-w-7xl lg:py-2 text-center">
-          <div class="flex">
+        <div
+          class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+          <div
+            class=" flex h-48 w-fit lg:h-fit items-center pt-14 pe-2 lg:pe-0 lg:pt-0">
             <div
-              class="lg:mt-4 grid grid-cols-4 gap-12 col-span-2 mt-0">
-              <div>
-                <h3
-                  class="text-sm font-semibold leading-6 ">Personajes</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="familiaIwakura.html"
-                      class="text-sm leading-6 text-gray-300 ">Familia Iwakura</a>
-                  </li>
-                  <li>
-                    <a href="personajeSecundario.html"
-                      class="text-sm leading-6 text-gray-300 ">Personajes
-                      secundarios</a>
-                  </li>
-                </ul>
-              </div>
-              <div >
-                <h3
-                  class="text-sm font-semibold leading-6 ">Episodios</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="episodio1-6.html"
-                      class="text-sm leading-6 text-gray-300 ">Episodios 1-6</a>
-                  </li>
-                  <li>
-                    <a href="episodio7-13.html"
-                      class="text-sm leading-6 text-gray-300 ">Episodios 7-13</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3
-                  class="text-sm font-semibold leading-6 e">Galeria</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="Galeria.html"
-                      class="text-sm leading-6 text-gray-300 ">Imagenes</a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3
-                  class="text-sm font-semibold leading-6 ">Contacto</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="emailContacto.html"
-                      class="text-sm leading-6 text-gray-300 ">Email</a>
-                  </li>
-                </ul>
-              </div>
+              class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+              <img src="Imagenes/layer09re.jpg" alt="Layer 09 "
+                class="inset-0 object-cover ">
+            </div>
+          </div>
+          <div>
+            <h2
+              class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
+              <span class="text-[#63538e] lg:place-items-end">layer09:
+              </span>
+              <span
+                class="text-[#EED4E6ff] text-3xl text-center  lg:place-items-end">Protocol</span>
+            </h2>
+            <p
+              class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-left">Durante
+              el episodio, muestran información de fondo sobre
+              "archivos" acerca del Caso Roswell,
+              Majestic 12, Vannevar Bush, Ted Nelson, John C.
+              Lilly, la Resonancia Schumann, Douglas Rushkoff y
+              Eiri Masami, quien agregó una función para usar el
+              séptimo protocolo IP.
+              Durante ese tiempo, Lain obtiene un microchip de JJ,
+              El DJ del club nocturno Cyberia. Ella luego pregunta
+              a Taro sobre su uso, pero dice no saberlo.
+              Después, sintiéndose intimidado por la muerte, él
+              admite que es un código diseñado por los Knights
+              para disolver la memoria humana.
+              Él los defiende pero admite no conocer mucho sobre
+              ellos. </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+          <div
+            class=" flex h-48 w-fit lg:h-fit items-center pe-2 lg:pe-0 lg:pt-0">
+            <div
+              class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+              <img src="Imagenes/layer10re.jpg" alt="Layer 10 "
+                class="inset-0 object-cover ">
+            </div>
+          </div>
+          <div>
+            <h2
+              class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
+              <span class="text-[#63538e] lg:place-items-end">layer10:
+              </span>
+              <span
+                class="text-[#EED4E6ff] text-3xl text-center  lg:place-items-end">Love</span>
+            </h2>
+            <p
+              class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-left">Eiri
+              Masami se presenta a sí mismo como Dios, explica que
+              lo es por causa de sus diseñadores,
+              Los Knights, quienes crearon el
+              "grupo de la inconsciencia" en la red.
+              Lain ve la lista de los integrantes y hace un trato
+              con ellos. </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+          <div
+            class=" flex h-48 w-fit lg:h-fit items-center pt-14 pe-2 lg:pe-0 lg:pt-0">
+            <div
+              class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+              <img src="Imagenes/layer11re.jpg" alt="Layer 11 "
+                class="inset-0 object-cover ">
+            </div>
+          </div>
+          <div>
+            <h2
+              class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
+              <span class="text-[#63538e] lg:place-items-end">layer11:
+              </span>
+              <span
+                class="text-[#EED4E6ff] text-xl text-center lg:text-3xl lg:place-items-end">Infornography</span>
+            </h2>
+            <p
+              class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-left">Lain
+              aparece tendida y exhausta en su alcoba, cubierta
+              por cables eléctricos.
+              En complejos flashbacks, Eiri aparece para
+              felicitarla por haber hecho la transferencia del
+              ordenador al cerebro
+              y le advierte que es un software pero el cerebro
+              tiene buena capacidad de hardware.
+              Lain se lo presenta a Arisu, y comenta la
+              posibilidad de borrar sus fantasías sexuales con el
+              profesor de la red, ya que los otros no usaban
+              dispositivo alguno;
+              y que restablecerá su buena reputación en la red.
+              Al día siguiente ninguno recuerda los rumores ni el
+              incidente, y Lain sonríe en complicidad con Arisu.
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+          <div
+            class=" flex h-48 w-fit lg:h-fit items-center pt-14 pe-2 lg:pe-0 lg:pt-0">
+            <div
+              class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+              <img src="Imagenes/layer12re.jpg" alt="Layer 12 "
+                class="inset-0 object-cover ">
+            </div>
+          </div>
+          <div>
+            <h2
+              class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
+              <span class="text-[#63538e] lg:place-items-end">layer12:
+              </span>
+              <span
+                class="text-[#EED4E6ff] text-2xl text-center lg:text-3xl lg:place-items-end">Landscape</span>
+            </h2>
+            <p
+              class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-left">La
+              frontera entre el mundo real y el virtual se
+              derrumba.
+              La perfección del séptimo protocolo da origen al
+              amor. Los Hombres de Negro reciben el pago final por
+              parte de su empleador.
+              Eiri Masami hace su aparición final, tiene una
+              fuerte confrontación con Lain en presencia de Arisu
+              quien sufre un desmayo. </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-x-4 justify-items-center border-double border-4 border-[#00063A33] hover:border-[#01426755] rounded-lg bg-[#00061F55] ">
+          <div
+            class=" flex h-48 w-fit lg:h-fit items-center pe-2 lg:pe-0 lg:pt-0">
+            <div
+              class="overflow-hidden rounded-2xl bg-gray-900  shadow-2xl from-[#7A5573ff] to-[#AE8DA9ff] opacity-80">
+              <img src="Imagenes/layer13re.jpg" alt="Layer 13 "
+                class="inset-0 object-cover ">
+            </div>
+          </div>
+          <div>
+            <h2
+              class="mt-2 text-base lg:text-xl font-bold tracking-tight text-[#63538e] grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
+              <span class="text-[#63538e] lg:place-items-end">layer13:
+              </span>
+              <span
+                class="text-[#EED4E6ff] text-3xl text-center lg:place-items-end">Ego</span>
+            </h2>
+            <p
+              class="mt-2 text-sm lg:text-base pb-2 pe-4 lg:pb-0 text-[#EED4E6ff] text-left">Lain
+              resuelve sus preguntas internas sobre su identidad
+              y toma una decisión radical: Borrarse de la memoria
+              de todos quienes la recuerdan. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="my-1 text-2xl font-bold lg:tracking-tight lg:p-x-6 text-end pt-10 pr-12">
+      <a href="episodio1-6.html"
+        class="flex justify-end text-[#77588Cf9] ">Episodio 1-6</a>
+    </div>
+    <!-- Footer -->
+    <!--queda por acomodar la imagen del logo-->
+    <footer class="mt-20 bg-[#2F232Cff] flex flex-col p-4 lg:p-6 "
+      aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="grid grid-cols-8 w-full items-center justify-items-center">
+        <a href="index.html" class="-m-1.5 col-span-2 justify-self-center">
+          <img class="h-12 lg:h-8 min-h-[2rem] opacity-80"
+            src="Imagenes/LogoNaviResizeRecolor2-removebg-preview.png"
+            alt="Navi">
+        </a>
+        <div class="flex justify-center col-span-4 ">
+          <!--queda por sacarle los bordes a la imagen del logo-->
+          <ul role="list" class="flex mt-6 space-x-2 justify-items-between mb-6">
+            <li>
+              <a href="https://es-la.facebook.com/groups/1724040977909569/"
+                target="_blank">
+                <img class="h-8 "
+                  src="Imagenes/redes/icons8-facebook-rodeado-de-círculo-128.png"
+                  alt>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/p/CtM9UEbPxKW/?img_index=10"
+                target="_blank">
+                <img class="h-8 "
+                  src="Imagenes/redes/icons8-instagram-128.png"
+                  alt>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/results?search_query=rick+roll+meme"
+                target="_blank">
+                <img class="h-8 "
+                  src="Imagenes/redes/icons8-stockx-128.png"
+                  alt>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=s0NME1GfbIc"
+                target="_blank">
+                <img class="h-8"
+                  src="Imagenes/redes/icons8-youtube-play-128.png"
+                  alt>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mx-auto max-w-7xl lg:py-2 text-center">
+        <div class="flex">
+          <div
+            class="lg:mt-4 grid grid-cols-4 gap-12 col-span-2 mt-0">
+            <div>
+              <h3
+                class="text-sm font-semibold leading-6 ">Personajes</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="familiaIwakura.html"
+                    class="text-sm leading-6 text-gray-300 ">Familia Iwakura</a>
+                </li>
+                <li>
+                  <a href="personajeSecundario.html"
+                    class="text-sm leading-6 text-gray-300 ">Personajes
+                    secundarios</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="text-sm font-semibold leading-6 ">Episodios</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="episodio1-6.html"
+                    class="text-sm leading-6 text-gray-300 ">Episodios 1-6</a>
+                </li>
+                <li>
+                  <a href="episodio7-13.html"
+                    class="text-sm leading-6 text-gray-300 ">Episodios 7-13</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="text-sm font-semibold leading-6 e">Galeria</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="Galeria.html"
+                    class="text-sm leading-6 text-gray-300 ">Imagenes</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3
+                class="text-sm font-semibold leading-6 ">Contacto</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="emailContacto.html"
+                    class="text-sm leading-6 text-gray-300 ">Email</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        </footer>
-        <script
-            src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-    </body>
+      </div>
+    </footer>
+    <script
+      src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
+    <script>
+              const toggleButton = document.getElementById('toggleMenu');
+              const closeButton = document.getElementById('closeMenu');
+              const menuDesplegable = document.getElementById('menuDesplegable');
+            
+              toggleButton.addEventListener('click', () => {
+                menuDesplegable.classList.toggle('hidden');
+              });
+            
+              closeButton.addEventListener('click', () => {
+                menuDesplegable.classList.add('hidden');
+              });
+            </script>
+  </body>
 </html>
