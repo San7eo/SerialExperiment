@@ -398,6 +398,12 @@
         const email = document.getElementById('email').value;
         const mensaje = document.getElementById('mensaje').value;
 
+         // Verificar si algún campo está vacío
+         if (nombre === '' || email === '' || mensaje === '') {
+            alert('Por favor, completa todos los campos antes de enviar el mensaje.');
+            return;
+        }
+
         const destinatario = 'santi7.amaro@gmail.com';
         const asunto = '';
         const cuerpo = `${mensaje}`;
