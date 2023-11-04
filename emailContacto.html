@@ -404,7 +404,7 @@
 
         const mailtoURL = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
         
-        window.location.href = mailtoURL;
+        window.open(mailtoURL, '_blank');
     }
 </script>
 
