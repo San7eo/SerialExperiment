@@ -408,7 +408,20 @@
         const asunto = '';
         const cuerpo = `${mensaje}`;
 
-        const mailtoURL = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        const dominio = email.split('@')[1];
+
+        // Determinar el servicio de correo electrónico y construir el enlace de correo
+        let mailtoURL;
+        if (dominio === 'gmail.com') {
+            mailtoURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${destinatario}&su=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        } else if (dominio === 'yahoo.com') {
+            mailtoURL = `https://compose.mail.yahoo.com/?to=${destinatario}&subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        } else if (dominio === 'outlook.com' || dominio === 'hotmail.com' || dominio === 'live.com') {
+            mailtoURL = `https://outlook.live.com/owa/?to=${destinatario}&subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        } else {
+            // Si el dominio no coincide con los servicios conocidos, usar el enlace genérico de mailto
+            mailtoURL = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+        }
         
         window.open(mailtoURL, '_blank');
     }
